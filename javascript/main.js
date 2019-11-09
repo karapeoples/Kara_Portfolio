@@ -26,7 +26,7 @@ const card1 = () => {
     sub.textContent =`Motto:`
     topInfo.textContent = `Success consists of going from failure to failure without loss of enthusiasm ~~Sir Winston Churchill`
     title2.textContent =`Introduction`;
-    info2.textContent =`I am a self-motivated, fast learning, loner, who can work with a group and be lead if necessary. I like to problem solve and see my accomplishments once I achieve them. I am looking for a mid-level company in which to start my career and have some opportunities`
+    info2.textContent =`I am a self-motivated, fast learning, loner, who can work with a group and be lead if necessary. I like to problem solve and see my accomplishments once I achieve them. I am looking for a mid-level company that has an environment in which to grow.`
     
 
 
@@ -35,3 +35,8 @@ const card1 = () => {
 
 let parent = document.querySelector('.container');
 parent.append(card1())
+
+
+
+
+

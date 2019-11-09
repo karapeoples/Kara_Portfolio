@@ -344,6 +344,7 @@ template {
   font-size: 36px;
   padding: 20px 0;
   text-align: center;
+  font-style: italic;
 }
 .menu ul li:hover {
   color: darkred;
@@ -422,4 +423,117 @@ template {
   text-align: center;
   font-family: "Indie Flower", cursive;
   color: darkred;
+}
+html,
+body,
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+html html,
+body html,
+* html {
+  font-size: 62.5%;
+}
+html .ghcontainer,
+body .ghcontainer,
+* .ghcontainer {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 10%;
+  border: 5px groove darkred;
+}
+html .card,
+body .card,
+* .card {
+  width: 98%;
+  padding: 20px;
+  display: flex;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+html .card img,
+body .card img,
+* .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+html .card .name,
+body .card .name,
+* .card .name {
+  font-size: 3.4rem;
+  color: darkred;
+}
+html .card p,
+body .card p,
+* .card p {
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+  color: darkred;
+}
+html .card .username,
+body .card .username,
+* .card .username {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 3px 0 10px;
+}
+html .card a,
+body .card a,
+* .card a {
+  text-decoration: none;
+}
+html .artifacts,
+body .artifacts,
+* .artifacts {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 5%;
+  border: 5px groove darkred;
+}
+html .artifacts .aCard,
+body .artifacts .aCard,
+* .artifacts .aCard {
+  width: 98%;
+  padding: 20px;
+  display: flex;
+  border-radius: 5px;
+  background-color: white;
+}
+html .artifacts .aCard img,
+body .artifacts .aCard img,
+* .artifacts .aCard img {
+  width: 500px;
+  height: 500px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+html .artifacts .aCard h2,
+body .artifacts .aCard h2,
+* .artifacts .aCard h2 {
+  font-size: 3.4rem;
+  color: darkred;
+}
+html .artifacts .aCard p,
+body .artifacts .aCard p,
+* .artifacts .aCard p {
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+  color: darkred;
+}
+html .artifacts .aCard .aStyle,
+body .artifacts .aCard .aStyle,
+* .artifacts .aCard .aStyle {
+  display: flex;
+  flex-direction: column;
+}
+html .artifacts .aCard a,
+body .artifacts .aCard a,
+* .artifacts .aCard a {
+  text-decoration: none;
+  flex-direction: row;
+  margin: 1% 0;
 }
