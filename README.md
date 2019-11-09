@@ -1,2 +1,3 @@
 # Kara_Portfolio
-The portfolio I am building from scratch
+Portfolio started because of a careers lesson
+Built for Showcasing Me.
