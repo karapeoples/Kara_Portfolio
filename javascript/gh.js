@@ -52,7 +52,7 @@ const ghCard = (ghInfo) =>{
 
 
 
-  let artifactInfo = [
+  let artifactInfo1 = [
       {
     image: `/Img/med-cabinet.jpg`,
     title: `Build Week 1`,
@@ -62,6 +62,8 @@ const ghCard = (ghInfo) =>{
     link3: `https://github.com/med-cabinet/med-cabinet-UI`,
     link4: `https://github.com/med-cabinet/med-cabinet-UI`,
   },
+]
+  let artifactInfo2 =[
   {
     image: `/Img/keep-savvy.jpg`,
     title: `Build Week 2`,
@@ -71,7 +73,7 @@ const ghCard = (ghInfo) =>{
     link3: `https://github.com/build-week-prisonerSkills/UI`,
     link4: `https://github.com/build-week-prisonerSkills/UI`,
   },
-    ]
+  ]
 
 
     const artifactCard = (image, title, info, link1, link2, link3, link4) => {
@@ -102,9 +104,16 @@ const ghCard = (ghInfo) =>{
         return aCard
     }
 
-    const artifacts = document.querySelector('.artifacts');
-    artifactInfo.forEach (info => {
-    const newACard = artifactCard(image, title, info, link1, link2, link3, link4);
-    artifacts.append(newACard);
+    const artifacts1 = document.querySelector('.artifacts1');
+    artifactInfo1.forEach (info => {
+    const newACard = artifactCard(info.image, info.title, info.info, info.link1, info.link2, info.link3, info.link4);
+    artifacts1.append(newACard);
     })
+    const artifacts2 = document.querySelector('.artifacts2');
+    artifactInfo2.forEach (info => {
+    const newBCard = artifactCard(info.image, info.title, info.info, info.link1, info.link2, info.link3, info.link4);
+    artifacts2.append(newBCard);
+    })
+
+
     
