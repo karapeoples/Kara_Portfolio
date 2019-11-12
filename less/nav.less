@@ -39,17 +39,20 @@
   
 }
 
-.menu ul li {
-  margin: 0 auto;
+.menu ul a {
+	display:flex;
+  	justify-content:center;
 	list-style-type: none;
 	font-size: 36px;
 	padding: 20px 0;
   text-align: center;
   font-style: italic;
+  text-decoration:none;
+ color:@color;
   &:hover{
     color:@bg;
     background:@color;
-    border-radius:25px;
+    border-radius:15px;
   } 
 }
 

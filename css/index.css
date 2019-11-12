@@ -338,18 +338,21 @@ template {
   border-bottom: none;
   z-index: 2;
 }
-.menu ul li {
-  margin: 0 auto;
+.menu ul a {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   font-size: 36px;
   padding: 20px 0;
   text-align: center;
   font-style: italic;
+  text-decoration: none;
+  color: white;
 }
-.menu ul li:hover {
+.menu ul a:hover {
   color: darkred;
   background: white;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .menu--open {
   display: block;
@@ -360,8 +363,8 @@ template {
 }
 .container .image img {
   display: flex;
-  width: 50%;
-  margin-left: 25%;
+  width: 25%;
+  margin: 0 auto;
   margin-top: 5%;
   border-radius: 5%;
 }
@@ -486,54 +489,190 @@ body .card a,
 * .card a {
   text-decoration: none;
 }
-html .artifacts,
-body .artifacts,
-* .artifacts {
+html .artifacts1,
+body .artifacts1,
+* .artifacts1,
+html .artifacts2,
+body .artifacts2,
+* .artifacts2 {
   width: 98%;
   margin: 0 auto;
   margin-top: 5%;
   border: 5px groove darkred;
 }
-html .artifacts .aCard,
-body .artifacts .aCard,
-* .artifacts .aCard {
+html .artifacts1 .aCard,
+body .artifacts1 .aCard,
+* .artifacts1 .aCard,
+html .artifacts2 .aCard,
+body .artifacts2 .aCard,
+* .artifacts2 .aCard {
   width: 98%;
   padding: 20px;
   display: flex;
   border-radius: 5px;
   background-color: white;
 }
-html .artifacts .aCard img,
-body .artifacts .aCard img,
-* .artifacts .aCard img {
+html .artifacts1 .aCard img,
+body .artifacts1 .aCard img,
+* .artifacts1 .aCard img,
+html .artifacts2 .aCard img,
+body .artifacts2 .aCard img,
+* .artifacts2 .aCard img {
   width: 500px;
   height: 500px;
   border-radius: 3px;
   margin-right: 20px;
 }
-html .artifacts .aCard h2,
-body .artifacts .aCard h2,
-* .artifacts .aCard h2 {
+html .artifacts1 .aCard h2,
+body .artifacts1 .aCard h2,
+* .artifacts1 .aCard h2,
+html .artifacts2 .aCard h2,
+body .artifacts2 .aCard h2,
+* .artifacts2 .aCard h2 {
   font-size: 3.4rem;
   color: darkred;
 }
-html .artifacts .aCard p,
-body .artifacts .aCard p,
-* .artifacts .aCard p {
+html .artifacts1 .aCard p,
+body .artifacts1 .aCard p,
+* .artifacts1 .aCard p,
+html .artifacts2 .aCard p,
+body .artifacts2 .aCard p,
+* .artifacts2 .aCard p {
   font-size: 1.4rem;
   margin-bottom: 3px;
   color: darkred;
 }
-html .artifacts .aCard .aStyle,
-body .artifacts .aCard .aStyle,
-* .artifacts .aCard .aStyle {
+html .artifacts1 .aCard .aStyle,
+body .artifacts1 .aCard .aStyle,
+* .artifacts1 .aCard .aStyle,
+html .artifacts2 .aCard .aStyle,
+body .artifacts2 .aCard .aStyle,
+* .artifacts2 .aCard .aStyle {
   display: flex;
   flex-direction: column;
 }
-html .artifacts .aCard a,
-body .artifacts .aCard a,
-* .artifacts .aCard a {
+html .artifacts1 .aCard a,
+body .artifacts1 .aCard a,
+* .artifacts1 .aCard a,
+html .artifacts2 .aCard a,
+body .artifacts2 .aCard a,
+* .artifacts2 .aCard a {
   text-decoration: none;
   flex-direction: row;
   margin: 1% 0;
+}
+.border {
+  text-align: center;
+  max-width: 98%;
+  border: 5px double white;
+  margin: 1%;
+  background: darkred;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 450px;
+  margin: 1%;
+  border: 5px groove white;
+}
+.programs {
+  display: flex;
+  border: 5px groove white;
+  margin: 1%;
+  color: white;
+  background: darkred;
+  margin-top: 5%;
+  width: 98%;
+}
+.programs .list1 {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  font-family: "Courgette", cursive;
+  font-size: 15px;
+}
+.programs .list1 h1 {
+  font-size: 50px;
+  text-decoration: underline overline;
+  font-style: bold;
+  margin: 1%;
+  margin-left: 7%;
+  font-family: "Amatic SC", cursive;
+}
+.programs .list1 .mo h2 {
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: underline overline;
+  font-family: "Indie Flower", cursive;
+  margin: 1%;
+}
+.programs .list1 .mo li {
+  list-style-type: circle;
+}
+.acs h2 {
+  font-style: italic;
+  text-decoration: underline overline;
+  font-family: "Indie Flower", cursive;
+  margin: 1%;
+  font-size: 25px;
+}
+.acs li {
+  list-style-type: circle;
+  margin: 1%;
+}
+.languages {
+  display: flex;
+  border: 5px groove white;
+  margin: 1%;
+  background: darkred;
+  color: white;
+  width: 98%;
+}
+.languages .list2 {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  font-family: "Courgette", cursive;
+  font-size: 15px;
+}
+.languages .list2 .cl h1 {
+  font-size: 50px;
+  text-decoration: underline overline;
+  font-style: bold;
+  margin: 1%;
+  font-family: "Amatic SC", cursive;
+}
+.languages .list2 .cl li {
+  list-style-type: circle;
+  margin: 1%;
+}
+.other {
+  display: flex;
+  border: 5px groove white;
+  margin: 1%;
+  background: darkred;
+  color: white;
+  width: 98%;
+}
+.other .list3 {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  font-family: "Courgette", cursive;
+  font-size: 15px;
+}
+.other .list3 .lo h1 {
+  font-size: 50px;
+  text-decoration: underline overline;
+  font-style: bold;
+  margin: 1%;
+  font-family: "Amatic SC", cursive;
+}
+.other .list3 .lo li {
+  list-style-type: circle;
+  margin: 1%;
 }
